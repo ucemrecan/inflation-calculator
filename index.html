@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inflation Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Germany Inflation Calculator</h1>
+        </div>
+        <div class="container-body">
+            <form>
+                <div class="amount">
+                    <label for="">Amount (€)</label>
+                    <input id="amount-value" type="number" value="100" step="any" min="0">
+                </div>
+                <div class="years">
+                    <div>
+                        <label for="">Start Year</label>
+                        <input id="start-year" type="number" value="1956" min="1956" max="2023">
+                    </div>
+                    <div>
+                        <label for="">End Year</label>
+                        <input id="end-year" type="number" value="2023" min="1956" max="2023">
+                    </div>
+                </div>
+                <div id="result" class="result">
+                    <p><strong>Result: </strong> 
+                        <span id="user-value">€100 </span> in 
+                        <span id="result-start-year">1956 </span> --> 
+                        <span id="result-value">€584.05 </span> in 
+                        <span id="result-end-year">2023</span>
+                    </p>
+
+                </div>
+                <button id="btn" type="submit">Calculate</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
